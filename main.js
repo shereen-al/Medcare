@@ -166,24 +166,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   preloadImages();
   
   // Add loading states and error handling for images
-  document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('img');
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   const images = document.querySelectorAll('img');
     
-    images.forEach(img => {
-      img.addEventListener('load', function() {
-        this.style.opacity = '1';
-      });
+  //   images.forEach(img => {
+  //     img.addEventListener('load', function() {
+  //       this.style.opacity = '1';
+  //     });
       
-      img.addEventListener('error', function() {
-        this.style.opacity = '0.5';
-        console.warn('Failed to load image:', this.src);
-      });
+  //     img.addEventListener('error', function() {
+  //       this.style.opacity = '0.5';
+  //       console.warn('Failed to load image:', this.src);
+  //     });
       
-      // Set initial opacity
-      img.style.opacity = '0';
-      img.style.transition = 'opacity 0.3s ease';
-    });
-  });
+  //     // Set initial opacity
+  //     img.style.opacity = '0';
+  //     img.style.transition = 'opacity 0.3s ease';
+  //   });
+  // });
   
   // Add scroll-to-top functionality
   const scrollToTopBtn = document.createElement('button');
